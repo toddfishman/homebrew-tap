@@ -1,11 +1,11 @@
-# Generated for v0.3.0 by packaging/renderformula.sh in toddfishman/stowit.
+# Generated for v0.3.1 by packaging/renderformula.sh in toddfishman/stowit.
 # Do not edit here — the next release overwrites this file. Edit the
 # template at packaging/homebrew/stowit.rb instead.
 
 class Stowit < Formula
   desc "Storage tier for builders: frees disk space without deleting anything"
   homepage "https://github.com/toddfishman/stowit"
-  version "0.3.0"
+  version "0.3.1"
   # The bottle is a combined work: the core/scan/cli/attic crates are
   # MIT OR Apache-2.0, but stowit-brain (the eviction planner) is proprietary
   # and links into the same binary. There is no SPDX expression for that, and
@@ -16,23 +16,23 @@ class Stowit < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/toddfishman/stowit/releases/download/v#{version}/stowit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "00e264b5979678cdc1b0c4afa1a0c73f0b650ef362899e4476403e2f3b938251"
+      url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "a500d83ec2e0fb77fbd10b7c264bcc80e03037928eda71d5faa00b1fe8263857"
     end
     on_intel do
-      url "https://github.com/toddfishman/stowit/releases/download/v#{version}/stowit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "fdd900f402360ae622aeaa4daee02c16bba802eed100903b3650d5d2991f9e10"
+      url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "299d41baa98277d79f05aed3c0a9f8ee34edd2a4502261ea0e82c565a3f7c431"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/toddfishman/stowit/releases/download/v#{version}/stowit-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0b5b95a565c8bd77dfe73feb66d96031b47208f88824d0c8999d07932e32622d"
+      url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "95e873cc4f6c4e86c9a10676a3d1230ced743b8b4517d27015d4dace481e67e9"
     end
     on_intel do
-      url "https://github.com/toddfishman/stowit/releases/download/v#{version}/stowit-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "034280ba0ddc226b71680691910fd62671ab4d5be6072007f8b668c2d59b43e8"
+      url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4840c0002576583c8311baa3e72ee809bd5d1daf156846c7cdcbb33c4b858a3b"
     end
   end
 
