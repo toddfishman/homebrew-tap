@@ -1,4 +1,4 @@
-# Generated for v0.6.14 by packaging/renderformula.sh in toddfishman/stowit.
+# Generated for v0.6.15 by packaging/renderformula.sh in toddfishman/stowit.
 # Do not edit here — the next release overwrites this file. Edit the
 # template at packaging/homebrew/stowit.rb instead.
 
@@ -9,7 +9,7 @@ class Stowit < Formula
   # checks that this URL resolves. Installs only ever use `url`, so this was
   # never load-bearing — it is the link a human clicks from `brew info`.
   homepage "https://stowit.dev"
-  version "0.6.14"
+  version "0.6.15"
   # The bottle is a combined work: the core/scan/cli/attic crates are
   # MIT OR Apache-2.0, but stowit-brain (the eviction planner) is proprietary
   # and links into the same binary. There is no SPDX expression for that, and
@@ -21,22 +21,22 @@ class Stowit < Formula
   on_macos do
     on_arm do
       url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "ae2214dcbad5f9708875f9c1545631c7db8d298cf19c821bd5b7b8206ff90faa"
+      sha256 "156b469e8206096e433a277cbf5ae04ef33e81733b9fd32b3eba4b75b0a76094"
     end
     on_intel do
       url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c9118e33d7d064de47d4e1f3b7a603c59403a2de2f8198af9f76b49ad2f8780c"
+      sha256 "b4d277b451096fd155c5e75447b031033866be043b43a63855baaf4762f4182f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fa6d7da7a8ffad569ddceeaa3282e1a6763544536e6a1f0fcb724dc6e5794263"
+      sha256 "c3fd0c0275d7b8a1380e1ae89574033a5352e6f396a0e2eebcc64d3b04eeb5f5"
     end
     on_intel do
       url "https://github.com/toddfishman/stowit-releases/releases/download/v#{version}/stowit-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7f97b504b24ce76ddfcfa319b26ba108e6729691e1b6662fc8f61f1d3fa74816"
+      sha256 "e01b92cbf83071bac586e3a9e41c330a4dc6944ce1249ade2ec3386c6998b27c"
     end
   end
 
